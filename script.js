@@ -6,5 +6,6 @@ document.getElementById('toggleRules').addEventListener('click', function(){
 });
 
 document.getElementById('enviarOp').addEventListener('click', function(){
-  alert('¡Gracias! (esto simula enviar la opinión)');
+  alert(' ¡Gracias! ');
 });
+
