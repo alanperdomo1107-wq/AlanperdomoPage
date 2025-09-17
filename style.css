@@ -73,6 +73,13 @@ body {
 
   }
 }
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* rellena sin deformar */
+}
+
 .hero-overlay{
   position: absolute; 
   top: 50%;
@@ -264,3 +271,4 @@ body {
   .menu-grid{ grid-template-columns: 1fr 1fr; }
   .menu-item-img {width:140px; height:100px; } 
 {}} 
+
