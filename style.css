@@ -110,7 +110,7 @@ body {
   gap: 10px;
 }
 #menuDestacadoBtn {
-  background: #f04e4e;
+  background: #11381f;
   color: white;
   border: none;
   padding: 10px 16px;
@@ -119,7 +119,7 @@ body {
   cursor: pointer;
 }
 #menuDestacadoBtn.active {
-  background: #c73737;
+  background: #333333;
 }
 
 
@@ -301,4 +301,5 @@ body {
   .menu-grid{ grid-template-columns: 1fr 1fr; }
   .menu-item-img {width:140px; height:100px; } 
 {}} 
+
 
