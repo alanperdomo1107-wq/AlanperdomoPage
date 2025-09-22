@@ -58,7 +58,16 @@ setInterval(() => {
   images[index].classList.remove("active");
   index = (index + 1) % images.length; // pasa a la siguiente
   images[index].classList.add("active");
-}, 3000); // cambia cada 3 segundos
+}, 2000); // cambia cada 3 segundos
 
+// Botón del menú destacado
+const btnDestacado = document.getElementById('menuDestacadoBtn');
+const contDestacado = document.getElementById('menuDestacado');
+
+btnDestacado.addEventListener('click', () => {
+  contDestacado.style.display = 
+    contDestacado.style.display === 'block' ? 'none' : 'block';
+  btnDestacado.classList.toggle('active');
+});
 
 });
