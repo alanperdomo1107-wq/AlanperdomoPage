@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Carrito - La tentación</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Carrito - El Sabor</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- NAV / HEADER -->
@@ -36,11 +36,11 @@
       <img src="hambur3.jpg" alt="Hamburguesa 3">
     </div>
     <div class="hero-overlay">
-      <h2 class="hero-title">Las mejores hamburguesas de la esquina</h2>
+      <h2 class="hero-title">Las mejores comidas de la esquina</h2>
       <p class="hero-sub">Hechas con amor desde el carrito 🚚🍔</p>
       <div class="hero-ctas">
         <a class="btn whatsapp big"  id="whatsappBtn" href="#">Hacé tu pedido por WhatsApp</a>
-        <a class="btn menu" href="#menu">Ver menú</a>
+        <a class="btn menu" href="#menuDestacadoBtn">Ver menú</a>
       </div>
     </div>
   </section>
@@ -50,73 +50,42 @@
     <!-- MAIN CONTENT -->
     <main class="content" role="main">
       <!-- Sección Menú -->
-      <section id="menu" class="section menu-section">
-        <h3 class="section-title">Menú destacado</h3>
+     <h3 class="section-title">Menú destacado</h3>
+<button id="menuDestacadoBtn">Menú destacado ⬇️</button>
 
-        <div class="menu-grid">
+        <!-- Contenedor ocultable -->
+        <div id="menuDestacado" class="menu-content">
           <!-- item 1 -->
           <article class="menu-item">
-            <img src="hambur3.jpg" alt="Hamburguesa clásica" />
+            <!-- <img src="hambur3.jpg" alt="Hamburguesa clásica" /> -->
             <div class="mi-info">
-              <h4>Hamburguesa Clásica</h4>
-              <p class="price">$180</p>
-              <p class="desc">Carne, lechuga, tomate, queso y salsa secreta.</p>
+              <h4>Pizza TNT</h4>
+              <p class="price">$500</p>
+              <p class="desc">Papas fritas y huevo.</p>
             </div>
           </article>
 
           <!-- item 2 -->
           <article class="menu-item">
-            <img src="hambur2.jpg" alt="Hamburguesa doble queso" />
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Hamburguesa Doble Queso</h4>
-              <p class="price">$230</p>
-              <p class="desc">Doble carne, doble queso, cebolla caramelizada.</p>
+              <h4>Pizza DINAMITA</h4>
+              <p class="price">$500</p>
+              <p class="desc">Muzza, Papas pay y huevo.</p>
             </div>
           </article>
 
-          <!-- item 3 -->
           <article class="menu-item">
-            <img src="hambur1.jpg" alt="Papas fritas con cheddar" />
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Papas fritas con cheddar</h4>
-              <p class="price">$150</p>
-              <p class="desc">Crocantes, con salsa cheddar casera.</p>
+              <h4>Pizza "La Tentación"</h4>
+              <p class="price">$650</p>
+              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
             </div>
           </article>
 
-          <!-- item 4 -->
-          <article class="menu-item">
-            <img src="hambur4.jpg" alt="Combo completo" />
-            <div class="mi-info">
-              <h4>Combo Completo</h4>
-              <p class="price">$300</p>
-              <p class="desc">Hamburguesa completa + papas + bebida.</p>
-            </div>
-          </article>
-
-          <!-- item 3 -->
-          <article class="menu-item">
-            <img src="hambur1.jpg" alt="Papas fritas con cheddar" />
-            <div class="mi-info">
-              <h4>Papas fritas con cheddar</h4>
-              <p class="price">$150</p>
-              <p class="desc">Crocantes, con salsa cheddar casera.</p>
-            </div>
-          </article>
-
-          <!-- item 3 -->
-          <article class="menu-item">
-            <img src="hambur1.jpg" alt="Papas fritas con cheddar" />
-            <div class="mi-info">
-              <h4>Papas fritas con cheddar</h4>
-              <p class="price">$150</p>
-              <p class="desc">Crocantes, con salsa cheddar casera.</p>
-            </div>
-          </article>
-
-         
         </div>
-      </section>
+    
 
       <!-- Ubicación -->
       <section id="ubicacion" class="section location-section">
@@ -124,7 +93,7 @@
         <p>Nos encontrás en las Covimalvinas 054 — Lunes a Domingo, 19:30hs–01:00hs</p>
         <!-- Mapa embebido (reemplazar el src por tu iframe de Google Maps) -->
         <div class="map-placeholder" aria-hidden="true">
-          <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.6911221912358!2d-57.80340551368146!3d-34.44472751159008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a30d74b0261069%3A0x5fc357c2e34da2c4!2sH54W%2B2PR%2C%2070000%20Col.%20del%20Sacramento%2C%20Departamento%20de%20Colonia!5e1!3m2!1ses-419!2suy!4v1758042329245!5m2!1ses-419!2suy" width="1050" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" margin=" 10px 0"></iframe></p>
+          <p> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d740.6911221912358!2d-57.80340551368146!3d-34.44472751159008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a30d74b0261069%3A0x5fc357c2e34da2c4!2sH54W%2B2PR%2C%2070000%20Col.%20del%20Sacramento%2C%20Departamento%20de%20Colonia!5e1!3m2!1ses-419!2suy!4v1758042329245!5m2!1ses-419!2suy" width="600vw" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" margin=" 10px 0"></iframe></p>
          
         </div>
       </section>
@@ -160,7 +129,7 @@
         <section id="contacto" class="section contact-section">
         <h3 class="section-title" id="contacto_titulo">Contacto</h3>
         <p>Teléfono / WhatsApp: <strong id="phoneText">092693512 </strong></p>
-        <p>Instagram: <a href="https://www.instagram.com/latentacion_fastfood/" target="_blank">@latentacion_fastfood</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/latentacion_fastfood/" target="_blank"  >@latentacion_fastfood</a></p>
         <p>¿Querés que te agreguemos al listado de pedidos? Hacé clic en el botón de WhatsApp.</p>
       </section>
       </div>
@@ -171,9 +140,9 @@
     <p>© <span id="year"></span> Carrito La Tentación — Diseñado por Alan</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
-
 </html>
+
 
 
