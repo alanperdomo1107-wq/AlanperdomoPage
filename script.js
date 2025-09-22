@@ -70,5 +70,6 @@ btnDestacado.addEventListener('click', () => {
   btnDestacado.classList.toggle('active');
 });
 
+});
 
 
