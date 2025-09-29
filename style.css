@@ -247,8 +247,15 @@ body {
 
 
 .presione{
-  line-height: 1.70;font-style:bold, oblique;color:#4e2d15;font-family:'Times New Roman', Times, serif; width: 200px; text-align: justify; background-image: linear-gradient( to bottom, transparent, #8e737366); border-radius: 2px; padding: 0 0 2px 2px;
+  line-height: 1.70;font-style:bold, oblique;color:#4e2d15;font-family:'Times New Roman', Times, serif; text-align: justify; background-image: linear-gradient( to bottom, transparent, #8e737366); border-radius: 2px; padding: 0 0 2px 2px;
+  font-style: oblique;
+  max-width: 90%;
+  text-align: left; /* o center */
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.4;
 }
+
 /* sections */
 .section { margin-bottom:20px; }
 .section-title, #menuDestacadoBtn, #menuCompletoBtn { font-size:1.1rem; margin-bottom:12px; font-weight:800; }
@@ -374,6 +381,7 @@ body {
   .menu-grid{ grid-template-columns: 1fr 1fr; }
   .menu-item-img {width:140px; height:100px; } 
 {}} 
+
 
 
 
