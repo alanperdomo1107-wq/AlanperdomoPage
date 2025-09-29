@@ -1,3 +1,19 @@
+ window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+
+    // Espera a que termine la animación y luego oculta el preloader
+    setTimeout(() => {
+      preloader.style.opacity = "0";
+      preloader.style.pointerEvents = "none";
+
+      // Elimina el preloader del DOM para liberar memoria
+      setTimeout(() => {
+        preloader.remove();
+      }, 500); // espera a que termine la transición de opacidad
+    }, 2200); // tiempo total de la animación (en ms)
+  });
+
+
 // Datos básicos (cambia el número por el del carrito)
 const PHONE = "+59892693512"; // remplaza por el número real (formato internacional sin espacios)
 const PHONE_TEXT = "+598  92 693 512"; // para mostrar en la página
@@ -70,6 +86,13 @@ btnDestacado.addEventListener('click', () => {
   btnDestacado.classList.toggle('active');
 });
 
+const btnCompleto = document.getElementById('menuCompletoBtn');
+const constCompleto = document.getElementById('menuCompleto');
+
+btnCompleto.addEventListener('click', () => {
+  constCompleto.style.display = 
+    constCompleto.style.display === 'block' ? 'none' : 'block';
+  btnCompleto.classList.toggle('active');
 });
 
-
+});
