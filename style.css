@@ -1,31 +1,59 @@
+/* ===== PRELOADER / ANIMACIÓN DE INICIO ===== */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff; /* Fondo blanco (cambialo si querés otro color) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+  transform: scale(2,2);
+}
+
+/* Animación del logo */
+#preloader-logo {
+  width: 120px;
+  height: auto;
+  animation: spinIn 2s ease-in-out;
+}
+
+/* Animación de giro y fade */
+@keyframes spinIn {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.8) rotate(180deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1,1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+
 /* ======== RESET / BASE ======== */
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html,body { height:100%; }
 body {
   font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  color: #111;
+  color: #2d2d2d;
   line-height: 1.35;
-  background: #fff;
+  background-color: #efe9c488 ;
 }
-
-
-.delivery{
-  display:flex;
-  gap:22px;
-  align-items:center;
-  border-radius:10px;
-  padding:8px;
-  background: #fff;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
-  width: 100px;
-  margin-left: 150px;
-}
-
-
 
 /* ======== HEADER ======== */
 
-
+.fondo-bueno{
+  background-color: #efe9c488;
+}
 .site-header{
   
   display:flex;
@@ -36,7 +64,7 @@ body {
   border-bottom:1px solid rgba(0,0,0,0.06);
   position:sticky;
   top:0;
-  background: linear-gradient(180deg, rgba(255,255,255,0.95), rgba(255,255,255,0.9));
+  background: linear-gradient(180deg, rgba(164, 154, 111, 0.95), rgba(229, 232, 226, 0.9));
   z-index:50;
 }
 .brand { display:flex; align-items:center; gap:8px; }
@@ -49,7 +77,7 @@ body {
 }
 
 .contactos{
-    background-color: #d64545;
+    background-color: #ef081b66;
 }
 /* nav */
 .main-nav { display:none; gap:8px; }
@@ -114,7 +142,7 @@ body {
   display: none; /* Oculto por defecto */
   margin-top: 10px;
   padding: 10px;
-  background: #fff5f5;
+  background: #f2ffeb;
   border-radius: 8px;
 }
 .menu-item {
@@ -124,21 +152,24 @@ body {
   display: flex;
   gap: 10px;
 }
-#menuDestacadoBtn {
-  background: #11381f;
+#menuDestacadoBtn, #menuCompletoBtn {
+  background: #6a9e7b;
   color: white;
   border: none;
-  padding: 10px 16px;
-  font-size: 16px;
+  padding: 10px 10px;
+  font-size: 12px;
   border-radius: 6px;
   cursor: pointer;
+  text-align: left;
+  margin-bottom: 10px;
+  
 }
-#menuDestacadoBtn.active {
+#menuDestacadoBtn.active, #menuCompletoBtn.active {
   background: #333333;
 }
 
 
-.hero-title{ font-size:1.6rem; margin-bottom:6px; font-weight:800; }
+.hero-title{ font-size:1.3rem; margin-bottom:6px; font-weight:800; }
 .hero-sub{ margin-bottom:10px; opacity:0.95; }
 .hero-ctas{ display:flex; gap:10px; flex-wrap:wrap; }
 .btn {
@@ -147,7 +178,7 @@ body {
   border-radius:8px;
   text-decoration:none;
   font-weight:700;
-  background:#166838;
+  background:#27583a;
   color:#fff;
   box-shadow: 0 0 6px 1px #1116;
 }
@@ -212,15 +243,27 @@ body {
 /* content */
 .content{ max-width:1100px; margin:0 auto; width:100%; }
 
+
+.presione{
+  line-height: 1.70;font-style:bold, oblique;color:#4e2d15;font-family:'Times New Roman', Times, serif; width: 200px; text-align: justify; background-image: linear-gradient( to bottom, transparent, #8e737366); border-radius: 2px; padding: 0 0 2px 2px;
+}
 /* sections */
 .section { margin-bottom:20px; }
-.section-title { font-size:1.1rem; margin-bottom:12px; font-weight:800; }
+.section-title, #menuDestacadoBtn, #menuCompletoBtn { font-size:1.1rem; margin-bottom:12px; font-weight:800; }
+
+.boton-destacado, #menuCompletoBtn{
+  box-shadow: 0 0 10px 1px #111;
+}
 
 /* MENU grid (mobile: 1 column, tablet+: 2 columns) */
 .menu-grid{
   display:grid;
   gap:12px;
   grid-template-columns: 1fr;
+}
+
+.menu-destacado{
+  box-shadow:0 0 10px 1px #111;
 }
 .menu-item{
   display:flex;
@@ -239,7 +282,7 @@ body {
 /* MAP placeholder */
 .map-placeholder{
   margin-top:10px;
-  margin-left: 10vw;
+  margin-left: 15vw;
   height:200px;
   border-radius:8px;
   display:flex;
@@ -247,7 +290,7 @@ body {
   justify-content:center;
   background:linear-gradient(180deg,transparent,#d5d5d5);
   border:1px dashed rgba(0,0,0,0.06);
-  width: 30vh;
+  width: 20vh;
   height: 100%;
   border: 0;
   border-radius: 8px; /* opcional, para que siga el borde redondeado */
@@ -270,13 +313,23 @@ body {
   box-shadow: 0 6px 18px rgba(0,0,0,0.04);
   text-align:center;
 }
-
+.delivery{
+  display:flex;
+  gap:22px;
+  align-items:center;
+  border-radius:10px;
+  padding:8px;
+  background: #fff;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.04);
+  width: 100px;
+  margin-left: 150px;
+}
 #contacto_titulo{
     background-image: linear-gradient(to bottom, rgba(235, 213, 253, 1.4) , transparent );
     border-bottom: solid 1px rgba(235, 213, 253, 0.4) ;
 }
 .layout{
-    background-color: #feefef;
+    background-color: #fac9c9;
 }
 .strip-block{
   flex:1 1 100%;
@@ -310,6 +363,9 @@ body {
     gap:20px;
     padding:28px;
   }
+
+
+
   .content { flex: 1 1 66%; padding-right:6px; }
   .side-strip { flex: 0 0 320px; flex-direction:column; position:static; }
 
