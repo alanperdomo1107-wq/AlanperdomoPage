@@ -125,13 +125,36 @@ body {
 }
 .hero-overlay{
   position: absolute; 
-  top: 60%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   text-shadow: 0 2px 8px rgba(0,0,0,0.5);
   padding: 20px;
+}
+
+.Nombre-Comida{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #487258;
+}
+
+.carne{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #503d28;
+}
+
+.fritas{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #a59b3a;
+}
+.gaseosas{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #69a2c6;
+}
+.pizzas{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #e2c39c;
 }
 #titulo_tentacion{
   color: rgb(0, 0, 0);
@@ -381,7 +404,3 @@ body {
   .menu-grid{ grid-template-columns: 1fr 1fr; }
   .menu-item-img {width:140px; height:100px; } 
 {}} 
-
-
-
-
