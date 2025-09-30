@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Carrito - El Sabor</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <!-- Preloader / Animación de inicio -->
@@ -55,13 +55,13 @@
   <!-- LAYOUT: contenido principal + strip lateral -->
   <div class="layout" id="menu">
     <!-- MAIN CONTENT -->
-    <main class="content" role="main">
+    <main class="content" role="main"><!--Menús acá-->
       <!-- Sección Menú -->
      <h3 class="section-title presione">Presione aquí para ver el menú destacado!</h3>
         <button id="menuDestacadoBtn" class="boton-destacado">Menú destacado ⬇️</button>
 
-        <!-- Contenedor ocultable -->
-        <div id="menuDestacado" class="menu-content">
+<!-- MENU DESTACADO -->
+<div id="menuDestacado" class="menu-content">
           <!-- item 1 -->
           <article class="menu-item">
             <!-- <img src="hambur3.jpg" alt="Hamburguesa clásica" /> -->
@@ -92,8 +92,10 @@
           </article>
 
          
-        </div>
-    <div  id="menu">
+</div>
+
+<!-- MENU COMPLETO -->
+<div  id="menu">
     <!-- MAIN CONTENT -->
     <main class="content" role="main">
       <!-- Sección Menú -->
@@ -102,102 +104,299 @@
 
         <!-- Contenedor ocultable -->
         <div id="menuCompleto" class="menu-content">
-          <!-- item 1 -->
+
+<h3 class="Nombre-Comida">Hamburguesas</h3>
+        
           <article class="menu-item">
             <!-- <img src="hambur3.jpg" alt="Hamburguesa clásica" /> -->
+            
+            
             <div class="mi-info">
-              <h4>Pizza TNT</h4>
-              <p class="price">$500</p>
-              <p class="desc">Papas fritas y huevo.</p>
+              <h4>Hamburguesa común</h4>
+              <p class="price">$230</p>
+              <p class="desc"></p>
             </div>
-          </article>
-
-          <!-- item 2 -->
+          </article>          
           <article class="menu-item">
             <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Pizza DINAMITA</h4>
+              <h4>Hamburguesa Completa</h4>
+              <p class="price">$260</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+
+<h3 class="Nombre-Comida">Milanesas</h3>
+
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Milanesa común</h4>
+              <p class="price">$310</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Milanesa en dos panes</h4>
+              <p class="price">$360</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Milanesa napolitana</h4>
+              <p class="price">$350</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Milanesa napolitana en dos panes</h4>
+              <p class="price">$390</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Milanesa Completa</h4>
+              <p class="price">$350</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Milanesa completa en dos panes</h4>
+              <p class="price">$400</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+
+<h3 class="Nombre-Comida">Panchos</h3>
+          <article class="menu-item">            
+            <div class="mi-info">
+              <h4>Pancho común</h4>
+              <p class="price">$110</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pancho con muzza</h4>
+              <p class="price">$195</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pancho con muzza y panceta</h4>
+              <p class="price">$195</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pancho completo</h4>
+              <p class="price">$240</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+
+
+<h3 class="carne">Carne</h3>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Chivito</h4>
+              <p class="price">$350</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Chorizo común</h4>
+              <p class="price">$225/p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Chorizo completo</h4>
+              <p class="price">$250</p>
+              <p class="desc">.</p>
+            </div>
+          </article>
+
+
+<h3 class="fritas">Fritas</h3>
+
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Porción de fritas común</h4>
+              <p class="price">$150</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Porción de fritas con cheddar</h4>
+              <p class="price">$195</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+
+          <div id="Pizzas">
+<h3 class="pizzas">Pizzas</h3>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza con muzza</h4>
+              <p class="price">$300</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza con jamón</h4>
+              <p class="price">$375</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza calabresa</h4>
+              <p class="price">$415</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza provenzal</h4>
+              <p class="price">$375</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza jamón y ananá</h4>
+              <p class="price">$415</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza con palmitos y golf</h4>
+              <p class="price">$500</p>
+              <p class="desc"></p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza "TNT""</h4>
+              <p class="price">$500</p>
+              <p class="desc">Papas Fritas y Huevo.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Pizza "DINAMITA"</h4>
               <p class="price">$500</p>
               <p class="desc">Muzza, Papas pay y huevo.</p>
             </div>
           </article>
+          <article class="menu-item"> 
+            <div class="mi-info">
+              <h4>Pizza "La Tentación"</h4>
+              <p class="price">$650</p>
+              <p class="desc">Muzza, , Panceta, Fritas, Verdeo, Chedar y Huevo.</p>
+            </div>
+          </article>
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Agregados</h4>
+              <p class="price">$60</p>
+              <p class="desc">Aceituna, Cebolla, Huevo Duro, Morrón, Champiñón, Provenzal, Choclo, Jamón, y Panceta. </p>
+            </div>
+          </article>
 
+          </div>
+
+          <div id="Gaseosas">
+<h3 class="gaseosas">Gaseosas</h3>
           <article class="menu-item">
             <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
-            </div>
-          </article>
-          <article class="menu-item">
-            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
-            <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
-            </div>
-          </article>
-<article class="menu-item">
-            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
-            <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
-            </div>
-          </article>
-          <article class="menu-item">
-            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
-            <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
-            </div>
-          </article>
-<article class="menu-item">
-            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
-            <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
+              <h4>Gaseosa 600</h4>
+              <p class="price">$110</p>
+             
             </div>
           </article>
 
           <article class="menu-item">
             <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
+              <h4>Gaseosa 1L</h4>
+              <p class="price">$150</p>
+              
             </div>
           </article>
 
           <article class="menu-item">
             <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
+              <h4>Gaseosa 1,5L</h4>
+              <p class="price">$190</p>
+              
             </div>
           </article>
 
           <article class="menu-item">
             <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
+              <h4>Cerveza chica</h4>
+              <p class="price">$110</p>
+              
             </div>
           </article>
 
           <article class="menu-item">
             <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
             <div class="mi-info">
-              <h4>Pizza "La Tentación"</h4>
-              <p class="price">$650</p>
-              <p class="desc">Muzza, Fritas, Verdeo, Chedar y Huevo.</p>
+              <h4>Cerveza de litro</h4>
+              <p class="price">$270</p>
+              
             </div>
           </article>
+
+          <article class="menu-item">
+            <!-- <img src="hambur2.jpg" alt="Hamburguesa doble queso" /> -->
+            <div class="mi-info">
+              <h4>Agua</h4>
+              <p class="price">$90</p>
+             
+            </div>
+          </article>
+</div>
 
          
         </div>
@@ -213,8 +412,8 @@
          
         </div>
         <a class="delivery">🚚 Delivery en la zona</a>
-        </div>
-      </section>
+</div>
+</section>
 
       <!-- Footer / contacto -->
       <!-- <section id="contacto" class="section contact-section">
@@ -259,7 +458,7 @@
     <p>© <span id="year"></span> Carrito La Tentación — Diseñado por <a href="https://www.instagram.com/alan.perdomoo/" target="_blank" style="color: rgb(48, 48, 48);" >@alan.perdomoo</a>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>
 
